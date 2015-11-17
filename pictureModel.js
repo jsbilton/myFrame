@@ -5,12 +5,15 @@
 var Backbone =  require ('backbone');
 
 module.exports = Backbone.Model.extend({
+// POST photos and STORE photos
   urlRoot: 'http://tiny-tiny.herokuapp.com/collections/myFrame',
-  idAttribute: '';
+// ID of each Photo
+  idAttribute: '_id';
+// Each has caption, image(url), #likes
   defaults: {
-    // photo: "http://www.fillmurray.com/300/400",
-    // task: "Generic Task";
-    // isComplete: false
+    caption: "Big Ern",
+    image: "http://www.fillmurray.com/300/400",
+    likes: 0
   },
   initialize: function () {
 

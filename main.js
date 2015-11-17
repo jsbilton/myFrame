@@ -7,7 +7,7 @@ var PictureModel = require ('./pictureModel');
 $(document).ready(function () {
 
   window.pictureCollection = new PictureCollection();
-  console.log("before fetch: ", PictureCollection);
+  console.log("before fetch: ", pictureCollection);
   var myModel = new PictureModel({});
   myModel.save();
   pictureCollection.fetch().then(function (collectionData){

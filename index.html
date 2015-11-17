@@ -3,6 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title>myFrame</title>
+    <!-- Inserting template -->
+    <!-- <script type="text/html" id="taskTmpl">
+      <article class="taskItem">
+        <input type="text" name="edits" placeholder="<%= tasks =%>" class= "hidden">
+        <h2><%= task =%></h2>
+      </article>
+
+
+    </script> -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
 
@@ -15,7 +24,20 @@
 
       <div class="wrapper">
         <section>
+          <h1>todos</h1>
+          <div class="container">
 
+            <ul class="myFrameFeed">
+              <li class="all">
+                <button type="button" name="all">All</li>
+                </button>
+              <li class="active">
+                <button type="button" name="active">Active</li>
+                </button>
+              <li class="completed">
+                <button type="button" name="completed">Completed</li>
+                </button>
+          </div>
         </section>
       </div>
 
@@ -25,6 +47,8 @@
       </section>
     </footer>
     </main>
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/underscore/underscore.js"></script>
     <script src="bundle.js" charset="utf-8"></script>
   </body>
 </html>

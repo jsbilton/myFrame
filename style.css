@@ -1,3 +1,4 @@
+
 header {
   background-color: cornflowerblue;
   color: yellow;
@@ -10,9 +11,15 @@ header {
 wrapper{
   width: 75%;
 }
+h1{
+  text-align: center;
+}
+ul{
+   list-style-type: none;
+}
 footer {
   background-color: cornflowerblue;
-  color: cornflowerblue;
+  color: yellow;
   height: 5%;
   width: 100%;
   text-align: center;

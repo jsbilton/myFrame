@@ -10,10 +10,9 @@ module.exports = {
     this.events();
   },
   styling: function () {
-    // display the images
-      // caption
-      // image
-      // likes
+    pictureCollection.fetch().then(function(collectionData){
+      console.log(pictureCollection);
+    })
 
 
 
@@ -22,7 +21,13 @@ module.exports = {
 
   },
   events: function () {
-    // 
+
+    $('form').on('click','#submitBtn', function(e){
+      e.preventDefault();
+      var imgUrl = $('#')
+      var imgCaption = $('#')
+      var imgLikes = $('#')
+  })
 
 
 

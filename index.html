@@ -3,16 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>myFrame</title>
-    <!-- Inserting template -->
-    <!-- <script type="text/html" id="taskTmpl">
-      <article class="taskItem">
-        <input type="text" name="edits" placeholder="<%= tasks =%>" class= "hidden">
-        <h2><%= task =%></h2>
-      </article>
-
-
-    </script> -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.css">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
 
   </head>
@@ -21,24 +13,22 @@
         myFrame
     </header>
     <main>
-      <!-- <nav>
-
-      </nav> -->
-
       <div class="wrapper">
         <section>
           <h1>myFrames</h1>
-          <div class="container">
-            <div class="showmyFrames">
-              <form class="" action="index.html" method="post">
-                <input type="button" name="name" value="">
-                <input type="button" name="name" value="">
-                <input type="button" name="name" value="">
-                <button type="button" name="likeMe">Like Me</button>
+          <div class="submitPhotos">
+
+              <form>
+                <input type="text" id ="captionInput" placeholder="Caption">
+                <input type="text" id ="photoInput" placeholder="Photo">
+                <button class="btn-primary" id ="submitBtn" name="submitBtn">Like Me</button>
               </form>
-            </div>
+          </div>
+          <div class="showMeThePhotos">
+
+          </div>
         </section>
-      </div>
+
 
     <footer>
       <section class="footer-bottom">
@@ -49,8 +39,6 @@
     </footer>
     </main>
 
-    <script src="bower_components/jquery/dist/jquery.js"></script>
-    <script src="bower_components/underscore/underscore.js"></script>
     <script src="bundle.js" charset="utf-8"></script>
   </body>
 </html>

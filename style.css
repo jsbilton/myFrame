@@ -14,8 +14,9 @@ wrapper{
 h1{
   text-align: center;
 }
-ul{
-   list-style-type: none;
+input{
+  display: inline-block;
+  width: 50%;
 }
 footer {
   background-color: cornflowerblue;
@@ -26,9 +27,3 @@ footer {
   font-family: helvetica;
   font-size: 3rem;
 }
-
-/*.footer-bottom {
-  background-color: cornflowerblue;
-  height: 5%;
-  width: 100%;
-}*/

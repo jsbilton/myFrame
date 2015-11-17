@@ -16,6 +16,6 @@ module.exports = Backbone.Model.extend({
     likes: 0
   },
   initialize: function () {
-    console.log("Sucess");
+    console.log("Success");
   }
 });

@@ -4,12 +4,13 @@ var $ = require ('jquery');
 var PictureCollection = require ('./pictureCollection');
 var PictureModel = require ('./pictureModel');
 
-module.exports = {
+var page = {
   init: function () {
-    this.styling();
-    this.events();
+    page.styling();
+    page.events();
   },
-  styling: function () {
+
+  initStyling: function () {
     pictureCollection.fetch().then(function(collectionData){
       console.log(pictureCollection);
       // need to loop through
@@ -33,7 +34,7 @@ module.exports = {
 
 
   },
-  events: function () {
+  initEvents: function () {
 
     $('form').on('click','#submitBtn', function(e){
       e.preventDefault();
